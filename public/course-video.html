@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwindcss -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- FontAwesomeIcons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- tab bar hover effect -->
+    <style>
+      .btn {
+        text-decoration: none;
+        position: relative;
+      }
+      .btn:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+      .btn:hover:after {
+        width: 100%;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-gray-100 w-full">
+      <header>
+        <nav class="h-20 w-full bg-header-dark"></nav>
+      </header>
+
+      <main class="px-2 sm:px-5 md:px-12 lg:px-16 py-5 sm:py-10">
+        <div
+          class="flex flex-col lg:flex-row items-start space-x-0 lg:space-x-10"
+        >
+          <div class="w-full lg:w-2/3">
+            <div class="flex justify-between">
+              <div>
+                <div class="flex space-x-1 items-center text-sm sm:text-base">
+                  <p>School Courses</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 sm:h-5 sm:w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <p>Science</p>
+                </div>
+                <h1 class="mt-1 text-xl sm:text-3xl font-semibold">
+                  Class 10: Science
+                </h1>
+              </div>
+
+              <div class="self-end flex items-center space-x-5">
+                <div class="bg-white rounded-full shadow-sm p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 sm:h-6 sm:w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="bg-white rounded-full shadow-sm p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 sm:h-6 sm:w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 h-72 sm:h-108 w-full relative">
+              <img
+                class="w-full h-full object-cover"
+                src="../images/video-thumbnail.jpg"
+                alt=""
+              />
+              <div
+                class="h-full w-full absolute top-0 bg-black opacity-40"
+              ></div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="
+                  w-28
+                  h-28
+                  sm:w-44
+                  sm:h-44
+                  text-white
+                  absolute
+                  top-0
+                  bottom-0
+                  left-0
+                  right-0
+                  m-auto
+                "
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+
+            <div
+              class="
+                mt-5
+                md:mt-10
+                lg:mt-20
+                pb-3
+                visible
+                lg:hidden
+                w-full
+                lg:w-1/3
+                bg-white
+                rounded-md
+                shadow-md
+              "
+            >
+              <h1
+                class="
+                  bg-accent-color
+                  text-white
+                  p-2
+                  sm:p-3
+                  font-semibold
+                  text-lg
+                  sm:text-xl
+                "
+              >
+                Chapter List
+              </h1>
+
+              <div class="px-3 mt-3">
+                <div class="flex items-center space-x-2">
+                  <i
+                    class="
+                      dropdown-btn
+                      fa fa-caret-down
+                      transition
+                      ease-in-out
+                      duration-300
+                      transform
+                    "
+                    aria-hidden="true"
+                  ></i>
+                  <h3 class="text-base sm:text-lg font-semibold">
+                    Force Gravity and Gravitation
+                  </h3>
+                </div>
+                <div
+                  class="
+                    dropdown-content
+                    overflow-hidden
+                    h-32
+                    mt-2
+                    flex flex-col
+                    space-y-2
+                    pl-5
+                    transition-height
+                    ease-in-out
+                    duration-300
+                  "
+                >
+                  <div
+                    class="
+                      flex
+                      items-center
+                      justify-between
+                      text-sm
+                      sm:text-base
+                      text-blue-500
+                    "
+                  >
+                    <p class="">Introduction to Science</p>
+                    <p class="">05:30</p>
+                  </div>
+                  <div
+                    class="
+                      flex
+                      items-center
+                      justify-between
+                      text-sm
+                      sm:text-base
+                    "
+                  >
+                    <p class="text-gray-700">Gravitation</p>
+                    <p class="text-gray-400">05:30</p>
+                  </div>
+                  <div
+                    class="
+                      flex
+                      items-center
+                      justify-between
+                      text-sm
+                      sm:text-base
+                    "
+                  >
+                    <p class="text-gray-700">Acceleration Due to Gravity</p>
+                    <p class="text-gray-400">05:30</p>
+                  </div>
+                  <div
+                    class="
+                      flex
+                      items-center
+                      justify-between
+                      text-sm
+                      sm:text-base
+                    "
+                  >
+                    <p class="text-gray-700">Mass and Weight</p>
+                    <p class="text-gray-400">05:30</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="px-3 mt-3">
+                <div class="flex items-center space-x-2">
+                  <i
+                    class="
+                      dropdown-btn
+                      fa fa-caret-down
+                      transition
+                      ease-in-out
+                      duration-300
+                      transform
+                    "
+                    aria-hidden="true"
+                  ></i>
+                  <h3 class="text-base sm:text-lg font-semibold">
+                    Force Gravity and Gravitation
+                  </h3>
+                </div>
+                <div
+                  class="
+                    dropdown-content
+                    overflow-hidden
+                    h-32
+                    mt-2
+                    flex flex-col
+                    space-y-2
+                    pl-5
+                    transition-height
+                    ease-in-out
+                    duration-300
+                  "
+                >
+                  <div
+                    class="
+                      flex
+                      items-center
+                      justify-between
+                      text-sm
+                      sm:text-base
+                    "
+                  >
+                    <p class="text-gray-700">Introduction to Science</p>
+                    <p class="text-gray-400">05:30</p>
+                  </div>
+                  <div
+                    class="
+                      flex
+                      items-center
+                      justify-between
+                      text-sm
+                      sm:text-base
+                    "
+                  >
+                    <p class="text-gray-700">Gravitation</p>
+                    <p class="text-gray-400">05:30</p>
+                  </div>
+                  <div
+                    class="
+                      flex
+                      items-center
+                      justify-between
+                      text-sm
+                      sm:text-base
+                    "
+                  >
+                    <p class="text-gray-700">Acceleration Due to Gravity</p>
+                    <p class="text-gray-400">05:30</p>
+                  </div>
+                  <div
+                    class="
+                      flex
+                      items-center
+                      justify-between
+                      text-sm
+                      sm:text-base
+                    "
+                  >
+                    <p class="text-gray-700">Mass and Weight</p>
+                    <p class="text-gray-400">05:30</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="px-3 mt-3">
+                <div class="flex items-center space-x-2">
+                  <i
+                    class="
+                      dropdown-btn
+                      fa fa-caret-down
+                      transition
+                      ease-in-out
+                      duration-300
+                      transform
+                    "
+                    aria-hidden="true"
+                  ></i>
+                  <h3 class="text-base sm:text-lg font-semibold">
+                    Force Gravity and Gravitation
+                  </h3>
+                </div>
+                <div
+                  class="
+                    dropdown-content
+                    overflow-hidden
+                    h-32
+                    mt-2
+                    flex flex-col
+                    space-y-2
+                    pl-5
+                    transition-height
+                    ease-in-out
+                    duration-300
+                  "
+                >
+                  <div
+                    class="
+                      flex
+                      items-center
+                      justify-between
+                      text-sm
+                      sm:text-base
+                    "
+                  >
+                    <p class="text-gray-700">Introduction to Science</p>
+                    <p class="text-gray-400">05:30</p>
+                  </div>
+                  <div
+                    class="
+                      flex
+                      items-center
+                      justify-between
+                      text-sm
+                      sm:text-base
+                    "
+                  >
+                    <p class="text-gray-700">Gravitation</p>
+                    <p class="text-gray-400">05:30</p>
+                  </div>
+                  <div
+                    class="
+                      flex
+                      items-center
+                      justify-between
+                      text-sm
+                      sm:text-base
+                    "
+                  >
+                    <p class="text-gray-700">Acceleration Due to Gravity</p>
+                    <p class="text-gray-400">05:30</p>
+                  </div>
+                  <div
+                    class="
+                      flex
+                      items-center
+                      justify-between
+                      text-sm
+                      sm:text-base
+                    "
+                  >
+                    <p class="text-gray-700">Mass and Weight</p>
+                    <p class="text-gray-400">05:30</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="px-3 mt-3">
+                <div class="flex items-center space-x-2">
+                  <i
+                    class="
+                      dropdown-btn
+                      fa fa-caret-down
+                      transition
+                      ease-in-out
+                      duration-300
+                      transform
+                    "
+                    aria-hidden="true"
+                  ></i>
+                  <h3 class="text-base sm:text-lg font-semibold">
+                    Force Gravity and Gravitation
+                  </h3>
+                </div>
+                <div
+                  class="
+                    dropdown-content
+                    overflow-hidden
+                    h-32
+                    mt-2
+                    flex flex-col
+                    space-y-2
+                    pl-5
+                    transition-height
+                    ease-in-out
+                    duration-300
+                  "
+                >
+                  <div
+                    class="
+                      flex
+                      items-center
+                      justify-between
+                      text-sm
+                      sm:text-base
+                    "
+                  >
+                    <p class="text-gray-700">Introduction to Science</p>
+                    <p class="text-gray-400">05:30</p>
+                  </div>
+                  <div
+                    class="
+                      flex
+                      items-center
+                      justify-between
+                      text-sm
+                      sm:text-base
+                    "
+                  >
+                    <p class="text-gray-700">Gravitation</p>
+                    <p class="text-gray-400">05:30</p>
+                  </div>
+                  <div
+                    class="
+                      flex
+                      items-center
+                      justify-between
+                      text-sm
+                      sm:text-base
+                    "
+                  >
+                    <p class="text-gray-700">Acceleration Due to Gravity</p>
+                    <p class="text-gray-400">05:30</p>
+                  </div>
+                  <div
+                    class="
+                      flex
+                      items-center
+                      justify-between
+                      text-sm
+                      sm:text-base
+                    "
+                  >
+                    <p class="text-gray-700">Mass and Weight</p>
+                    <p class="text-gray-400">05:30</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab mt-5 md:mt-10 bg-white rounded-md shadow-md">
+              <div
+                class="
+                  text-base
+                  sm:text-lg
+                  font-semibold
+                  bg-accent-color
+                  text-white
+                  px-4
+                  sm:px-8
+                  py-3
+                  flex
+                  space-x-8
+                "
+              >
+                <a
+                  class="tab-links border-b-2 border-white"
+                  id="btn-1"
+                  href="javascript:void(0)"
+                >
+                  Description
+                </a>
+                <a class="btn tab-links" id="btn-2" href="javascript:void(0)">
+                  Notebooks
+                </a>
+                <a class="btn tab-links" id="btn-3" href="javascript:void(0)">
+                  Questions
+                </a>
+              </div>
+              <div id="tabs1" class="px-4 sm:px-8 pt-2 pb-5">
+                <p class="text-sm sm:text-base text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolorem quia aspernatur minima tempore, laboriosam corporis?
+                  Voluptate explicabo iure voluptates ad eveniet atque unde
+                  velit at maiores earum magni rerum possimus doloremque
+                  repellat rem pariatur reiciendis dignissimos nihil neque fuga
+                  provident doloribus, temporibus ducimus officiis. Aliquid
+                  praesentium repellendus quae quisquam unde!
+                  <br /><br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolorem quia aspernatur minima tempore, laboriosam corporis?
+                  Voluptate explicabo iure voluptates ad eveniet atque unde
+                  velit at maiores earum magni rerum possimus doloremque.
+                </p>
+              </div>
+
+              <div id="tabs2" class="hidden px-4 sm:px-8 pt-2 pb-5">
+                <h1 class="text-base sm:text-lg font-semibold text-gray-700">
+                  Force: Gravity and Gravitation
+                </h1>
+                <hr class="mt-1" />
+                <div class="flex flex-col space-y-2 mt-2">
+                  <div class="flex justify-between">
+                    <h2 class="text-sm sm:text-base text-gray-500">
+                      Introduction to Science
+                    </h2>
+
+                    <div
+                      class="
+                        flex
+                        space-x-5
+                        text-xs
+                        sm:text-sm
+                        items-center
+                        text-gray-500
+                      "
+                    >
+                      <div class="flex space-x-2 items-center">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <p>View</p>
+                      </div>
+                      <div class="flex space-x-2 items-center">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <p>Download</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between">
+                    <h2 class="text-sm sm:text-base text-gray-500">
+                      Gravitation
+                    </h2>
+
+                    <div
+                      class="
+                        flex
+                        space-x-5
+                        text-xs
+                        sm:text-sm
+                        items-center
+                        text-gray-500
+                      "
+                    >
+                      <div class="flex space-x-2 items-center">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <p>View</p>
+                      </div>
+                      <div class="flex space-x-2 items-center">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <p>Download</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between">
+                    <h2 class="text-sm sm:text-base text-gray-500">
+                      Acceleration Due to Gravity
+                    </h2>
+
+                    <div
+                      class="
+                        flex
+                        space-x-5
+                        text-xs
+                        sm:text-sm
+                        items-center
+                        text-gray-500
+                      "
+                    >
+                      <div class="flex space-x-2 items-center">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <p>View</p>
+                      </div>
+                      <div class="flex space-x-2 items-center">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <p>Download</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between">
+                    <h2 class="text-sm sm:text-base text-gray-500">
+                      Mass and Weight
+                    </h2>
+
+                    <div
+                      class="
+                        flex
+                        space-x-5
+                        text-xs
+                        sm:text-sm
+                        items-center
+                        text-gray-500
+                      "
+                    >
+                      <div class="flex space-x-2 items-center">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <p>View</p>
+                      </div>
+                      <div class="flex space-x-2 items-center">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <p>Download</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Questions Content -->
+
+              <div id="tabs3" class="hidden px-4 sm:px-8 pt-2 pb-5">
+                <div class="flex flex-col space-y-2 text-sm sm:text-base">
+                  <p>
+                    Q.1
+                    <span class="text-gray-600">
+                      An object takes 5 s to reach the ground from a height of 5
+                      m on a planet. What is the value of g on the planet?</span
+                    >
+                  </p>
+                  <p>
+                    Q.2
+                    <span class="text-gray-600">
+                      Explain why the value of g is zero at the centre of the
+                      earth.</span
+                    >
+                  </p>
+                  <p>
+                    Q.3
+                    <span class="text-gray-600">
+                      An object takes 5 s to reach the ground from a height of 5
+                      m on a planet. What is the value of g on the planet?</span
+                    >
+                  </p>
+                  <p>
+                    Q.4
+                    <span class="text-gray-600">
+                      Explain why the value of g is zero at the centre of the
+                      earth.</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="
+                mt-5
+                md:mt-10
+                flex flex-col
+                md:flex-row
+                items-start
+                md:items-center
+                space-x-0
+                md:space-x-7
+                bg-white
+                rounded-md
+                shadow-md
+                px-4
+                py-4
+              "
+            >
+              <h3
+                class="text-lg sm:text-xl visible md:hidden font-semibold mb-3"
+              >
+                About Instructor
+              </h3>
+              <div class="order-2 md:order-none">
+                <h3
+                  class="text-lg sm:text-xl hidden md:block font-semibold mb-3"
+                >
+                  About Instructor
+                </h3>
+
+                <p class="mt-2 mb-5 text-base text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolorem quia aspernatur minima tempore, laboriosam corporis?
+                  Voluptate explicabo iure voluptates ad eveniet atque unde
+                  velit at maiores earum magni rerum possimus doloremque
+                  repellat rem pariatur reiciendis dignissimos nihil neque fuga
+                  provident doloribus, temporibus ducimus officiis. Aliquid
+                  praesentium repellendus quae quisquam unde!
+                </p>
+              </div>
+
+              <div
+                class="
+                  order-1
+                  md:order-none
+                  w-full
+                  md:w-32
+                  flex flex-col
+                  md:flex-none
+                  jusitfy-center
+                  items-center
+                "
+              >
+                <img
+                  class="rounded-full h-20 w-20 md:h-36 md:w-36 object-cover"
+                  src="../images/dummy-profile.jpeg"
+                  alt=""
+                />
+                <p
+                  class="
+                    mt-2
+                    text-gray-700 text-large
+                    font-semibold
+                    text-center
+                  "
+                >
+                  Deepak Thapa
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content List large screen -->
+          <div
+            class="
+              mt-5
+              lg:mt-20
+              pb-3
+              hidden
+              lg:block
+              w-full
+              lg:w-1/3
+              bg-white
+              rounded-md
+              shadow-md
+            "
+          >
+            <h1 class="bg-accent-color text-white p-3 font-semibold text-xl">
+              Chapter List
+            </h1>
+
+            <div class="px-3 mt-3">
+              <div class="flex justify-between items-center text-blue-500">
+                <div class="flex items-center space-x-2">
+                  <i
+                    class="
+                      dropdown-btn
+                      fa fa-caret-down
+                      transition
+                      ease-in-out
+                      duration-300
+                      transform
+                    "
+                    aria-hidden="true"
+                  ></i>
+                  <h3 class="text-base sm:text-lg font-semibold">
+                    Force Gravity and Gravitation
+                  </h3>
+                </div>
+
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="
+                  dropdown-content
+                  overflow-hidden
+                  h-32
+                  mt-2
+                  flex flex-col
+                  space-y-2
+                  pl-5
+                  transition-height
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <div
+                  class="
+                    flex
+                    items-center
+                    justify-between
+                    text-sm
+                    sm:text-base
+                    text-blue-500
+                  "
+                >
+                  <p class="">Introduction to Science</p>
+                  <p class="">05:30</p>
+                </div>
+                <div
+                  class="flex items-center justify-between text-sm sm:text-base"
+                >
+                  <p class="text-gray-700">Gravitation</p>
+                  <p class="text-gray-400">05:30</p>
+                </div>
+                <div
+                  class="flex items-center justify-between text-sm sm:text-base"
+                >
+                  <p class="text-gray-700">Acceleration Due to Gravity</p>
+                  <p class="text-gray-400">05:30</p>
+                </div>
+                <div
+                  class="flex items-center justify-between text-sm sm:text-base"
+                >
+                  <p class="text-gray-700">Mass and Weight</p>
+                  <p class="text-gray-400">05:30</p>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="px-3 mt-3">
+              <div class="flex items-center space-x-2">
+                <i
+                  class="
+                    dropdown-btn
+                    fa fa-caret-down
+                    transition
+                    ease-in-out
+                    duration-300
+                    transform
+                  "
+                  aria-hidden="true"
+                ></i>
+                <h3 class="text-base sm:text-lg font-semibold">
+                  Force Gravity and Gravitation
+                </h3>
+              </div>
+              <div
+                class="
+                  dropdown-content
+                  overflow-hidden
+                  h-32
+                  mt-2
+                  flex flex-col
+                  space-y-2
+                  pl-5
+                  transition-height
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <div
+                  class="flex items-center justify-between text-sm sm:text-base"
+                >
+                  <p class="text-gray-700">Introduction to Science</p>
+                  <p class="text-gray-400">05:30</p>
+                </div>
+                <div
+                  class="flex items-center justify-between text-sm sm:text-base"
+                >
+                  <p class="text-gray-700">Gravitation</p>
+                  <p class="text-gray-400">05:30</p>
+                </div>
+                <div
+                  class="flex items-center justify-between text-sm sm:text-base"
+                >
+                  <p class="text-gray-700">Acceleration Due to Gravity</p>
+                  <p class="text-gray-400">05:30</p>
+                </div>
+                <div
+                  class="flex items-center justify-between text-sm sm:text-base"
+                >
+                  <p class="text-gray-700">Mass and Weight</p>
+                  <p class="text-gray-400">05:30</p>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="px-3 mt-3">
+              <div class="flex items-center space-x-2">
+                <i
+                  class="
+                    dropdown-btn
+                    fa fa-caret-down
+                    transition
+                    ease-in-out
+                    duration-300
+                    transform
+                  "
+                  aria-hidden="true"
+                ></i>
+                <h3 class="text-base sm:text-lg font-semibold">
+                  Force Gravity and Gravitation
+                </h3>
+              </div>
+              <div
+                class="
+                  dropdown-content
+                  overflow-hidden
+                  h-32
+                  mt-2
+                  flex flex-col
+                  space-y-2
+                  pl-5
+                  transition-height
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <div
+                  class="flex items-center justify-between text-sm sm:text-base"
+                >
+                  <p class="text-gray-700">Introduction to Science</p>
+                  <p class="text-gray-400">05:30</p>
+                </div>
+                <div
+                  class="flex items-center justify-between text-sm sm:text-base"
+                >
+                  <p class="text-gray-700">Gravitation</p>
+                  <p class="text-gray-400">05:30</p>
+                </div>
+                <div
+                  class="flex items-center justify-between text-sm sm:text-base"
+                >
+                  <p class="text-gray-700">Acceleration Due to Gravity</p>
+                  <p class="text-gray-400">05:30</p>
+                </div>
+                <div
+                  class="flex items-center justify-between text-sm sm:text-base"
+                >
+                  <p class="text-gray-700">Mass and Weight</p>
+                  <p class="text-gray-400">05:30</p>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="px-3 mt-3">
+              <div class="flex items-center space-x-2">
+                <i
+                  class="
+                    dropdown-btn
+                    fa fa-caret-down
+                    transition
+                    ease-in-out
+                    duration-300
+                    transform
+                  "
+                  aria-hidden="true"
+                ></i>
+                <h3 class="text-base sm:text-lg font-semibold">
+                  Force Gravity and Gravitation
+                </h3>
+              </div>
+              <div
+                class="
+                  dropdown-content
+                  overflow-hidden
+                  h-32
+                  mt-2
+                  flex flex-col
+                  space-y-2
+                  pl-5
+                  transition-height
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <div
+                  class="flex items-center justify-between text-sm sm:text-base"
+                >
+                  <p class="text-gray-700">Introduction to Science</p>
+                  <p class="text-gray-400">05:30</p>
+                </div>
+                <div
+                  class="flex items-center justify-between text-sm sm:text-base"
+                >
+                  <p class="text-gray-700">Gravitation</p>
+                  <p class="text-gray-400">05:30</p>
+                </div>
+                <div
+                  class="flex items-center justify-between text-sm sm:text-base"
+                >
+                  <p class="text-gray-700">Acceleration Due to Gravity</p>
+                  <p class="text-gray-400">05:30</p>
+                </div>
+                <div
+                  class="flex items-center justify-between text-sm sm:text-base"
+                >
+                  <p class="text-gray-700">Mass and Weight</p>
+                  <p class="text-gray-400">05:30</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Subjects -->
+        <section
+          class="mt-5 md:mt-10 bg-white w-full shadow-md py-5 px-4 sm:px-8"
+        >
+          <h1 class="text-lg sm:text-2xl font-semibold">Related Subjects</h1>
+          <div
+            class="
+              w-full
+              grid grid-cols-2
+              sm:grid-cols-4
+              lg:grid-cols-5
+              gap-8
+              mt-5
+            "
+          >
+            <div class="flex flex-col items-center">
+              <div
+                class="
+                  relative
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  border-2
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <div
+                  class="
+                    text-white
+                    font-laila
+                    absolute
+                    opacity-0
+                    hover:opacity-100
+                    bg-black bg-opacity-30
+                    rounded-xl
+                    inset-0
+                    z-10
+                    flex flex-col
+                    justify-center
+                    items-center
+                    transition
+                    ease-out
+                  "
+                >
+                  <h4 class="text-xl">Class 9</h4>
+                  <h2 class="text-2xl font-semibold">English</h2>
+                </div>
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class9-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/english.svg"
+                  alt=""
+                />
+              </div>
+
+              <h1 class="text-base font-semibold visible md:hidden">English</h1>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div
+                class="
+                  relative
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  border-2
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <div
+                  class="
+                    text-white
+                    font-laila
+                    absolute
+                    opacity-0
+                    hover:opacity-100
+                    bg-black bg-opacity-30
+                    rounded-xl
+                    inset-0
+                    z-10
+                    flex flex-col
+                    justify-center
+                    items-center
+                    transition
+                    ease-out
+                  "
+                >
+                  <h4 class="text-xl">Class 9</h4>
+                  <h2 class="text-2xl font-semibold">English</h2>
+                </div>
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class9-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/english.svg"
+                  alt=""
+                />
+              </div>
+
+              <h1 class="text-base font-semibold visible md:hidden">English</h1>
+            </div>
+            <div class="flex flex-col items-center">
+              <div
+                class="
+                  relative
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  border-2
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <div
+                  class="
+                    text-white
+                    font-laila
+                    absolute
+                    opacity-0
+                    hover:opacity-100
+                    bg-black bg-opacity-30
+                    rounded-xl
+                    inset-0
+                    z-10
+                    flex flex-col
+                    justify-center
+                    items-center
+                    transition
+                    ease-out
+                  "
+                >
+                  <h4 class="text-xl">Class 9</h4>
+                  <h2 class="text-2xl font-semibold">English</h2>
+                </div>
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class9-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/english.svg"
+                  alt=""
+                />
+              </div>
+
+              <h1 class="text-base font-semibold visible md:hidden">English</h1>
+            </div>
+            <div class="flex flex-col items-center">
+              <div
+                class="
+                  relative
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  border-2
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <div
+                  class="
+                    text-white
+                    font-laila
+                    absolute
+                    opacity-0
+                    hover:opacity-100
+                    bg-black bg-opacity-30
+                    rounded-xl
+                    inset-0
+                    z-10
+                    flex flex-col
+                    justify-center
+                    items-center
+                    transition
+                    ease-out
+                  "
+                >
+                  <h4 class="text-xl">Class 9</h4>
+                  <h2 class="text-2xl font-semibold">English</h2>
+                </div>
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class9-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/english.svg"
+                  alt=""
+                />
+              </div>
+
+              <h1 class="text-base font-semibold visible md:hidden">English</h1>
+            </div>
+
+            <div
+              class="
+                hidden
+                relative
+                h-36
+                sm:h-40
+                md:h-44
+                w-28
+                sm:w-32
+                md:w-36
+                bg-white
+                border-2
+                rounded-xl
+                shadow-md
+                lg:flex
+                hover:shadow-lg
+                transform
+                hover:scale-105
+                transition
+                ease-in-out
+                duration-300
+              "
+            >
+              <div
+                class="
+                  text-white
+                  font-laila
+                  absolute
+                  opacity-0
+                  hover:opacity-100
+                  bg-black bg-opacity-30
+                  rounded-xl
+                  inset-0
+                  z-10
+                  flex flex-col
+                  justify-center
+                  items-center
+                  transition
+                  ease-out
+                "
+              >
+                <h4 class="text-xl">Class 9</h4>
+                <h2 class="text-2xl font-semibold">English</h2>
+              </div>
+              <img
+                class="absolute h-6 sm:h-8 pl-4"
+                src="../images/class9-badge.svg"
+                alt=""
+              />
+              <img
+                class="h-20 sm:h-24 m-auto"
+                src="../images/english.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Comment Section -->
+        <div
+          class="
+            flex flex-col
+            md:flex-row
+            justify-start
+            lg:justify-center
+            items-start
+            mt-5
+            md:mt-10
+            space-y-5
+            md:space-y-0
+            space-x-0
+            md:space-x-8
+            lg:space-x-10
+          "
+        >
+          <div
+            class="
+              bg-white
+              shadow-md
+              rounded-md
+              w-full
+              md:w-2/3
+              px-2
+              sm:px-8
+              py-5
+            "
+          >
+            <div class="w-full">
+              <div class="flex justify-between">
+                <p class="text-xl font-semibold text-gray-700">Comments</p>
+
+                <div class="flex space-x-3 items-center">
+                  <p class="text-gray-500 text-base">10 comments</p>
+                </div>
+              </div>
+
+              <div class="mt-5 flex space-x-3 items-center">
+                <div>
+                  <div class="bg-accent-color w-16 h-16 rounded-full"></div>
+                </div>
+                <div class="w-full">
+                  <input
+                    class="
+                      w-full
+                      h-8
+                      border border-gray-300
+                      outline-none
+                      focus:outline-none
+                    "
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="flex justify-end">
+                <div class="flex space-x-2">
+                  <button class="text-gray-600 hover:bg-gray-200 px-2 py-1">
+                    Cancel
+                  </button>
+                  <button class="bg-blue-500 px-2 py-1 text-white">
+                    Comment
+                  </button>
+                </div>
+              </div>
+            </div>
+            <hr class="mt-5" />
+            <div class="pl-0 lg:pl-16 py-5 w-full">
+              <div class="flex space-x-4">
+                <div>
+                  <div
+                    class="
+                      h-10
+                      w-10
+                      sm:h-12
+                      sm:w-12
+                      bg-accent-color
+                      rounded-full
+                      text-white text-lg
+                      sm:text-2xl
+                      font-semibold
+                      flex
+                      justify-center
+                      items-center
+                    "
+                  >
+                    J
+                  </div>
+                </div>
+                <div>
+                  <h1 class="text-lg sm:text-xl font-semibold text-gray-700">
+                    James
+                  </h1>
+                  <div class="flex space-x-3">
+                    <p class="text-gray-400 text-xs sm:text-sm">2 months ago</p>
+                  </div>
+
+                  <p
+                    class="
+                      text-xs
+                      sm:text-sm
+                      text-gray-500
+                      leading-relaxed
+                      mt-2
+                    "
+                  >
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Unde numquam eaque voluptatibus sapiente quidem soluta
+                    laborum voluptatem tenetur consequatur? Culpa, aspernatur
+                    doloribus. Nulla, perspiciatis! Ut deleniti, iusto amet
+                    impedit adipisci consectetur consequatur cum fugiat dolores
+                    totam quas dolore perferendis debitis!
+                  </p>
+
+                  <div
+                    class="
+                      mt-2
+                      flex
+                      items-center
+                      space-x-3
+                      text-base text-gray-600
+                    "
+                  >
+                    <button class="font-semibold tracking-wider">REPLY</button>
+                    <button class="font-semibold text-gray-500">
+                      <span
+                        ><i class="fa fa-caret-down" aria-hidden="true"></i
+                      ></span>
+                      View Reply
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="mt-2 sm:mt-5" />
+            <div class="pl-0 lg:pl-16 py-5 w-full">
+              <div class="flex space-x-4">
+                <div>
+                  <div
+                    class="
+                      h-10
+                      w-10
+                      sm:h-12
+                      sm:w-12
+                      bg-accent-color
+                      rounded-full
+                      text-white text-lg
+                      sm:text-2xl
+                      font-semibold
+                      flex
+                      justify-center
+                      items-center
+                    "
+                  >
+                    J
+                  </div>
+                </div>
+                <div>
+                  <h1 class="text-lg sm:text-xl font-semibold text-gray-700">
+                    James
+                  </h1>
+                  <div class="flex space-x-3">
+                    <p class="text-gray-400 text-xs sm:text-sm">2 months ago</p>
+                  </div>
+
+                  <p
+                    class="
+                      text-xs
+                      sm:text-sm
+                      text-gray-500
+                      leading-relaxed
+                      mt-2
+                    "
+                  >
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Unde numquam eaque voluptatibus sapiente quidem soluta
+                    laborum voluptatem tenetur consequatur? Culpa, aspernatur
+                    doloribus. Nulla, perspiciatis! Ut deleniti, iusto amet
+                    impedit adipisci consectetur consequatur cum fugiat dolores
+                    totam quas dolore perferendis debitis!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <hr class="mt-2 sm:mt-5" />
+            <div class="pl-0 lg:pl-16 py-5 w-full">
+              <div class="flex space-x-4">
+                <div>
+                  <div
+                    class="
+                      h-10
+                      w-10
+                      sm:h-12
+                      sm:w-12
+                      bg-accent-color
+                      rounded-full
+                      text-white text-lg
+                      sm:text-2xl
+                      font-semibold
+                      flex
+                      justify-center
+                      items-center
+                    "
+                  >
+                    J
+                  </div>
+                </div>
+                <div>
+                  <h1 class="text-lg sm:text-xl font-semibold text-gray-700">
+                    James
+                  </h1>
+                  <div class="flex space-x-3">
+                    <p class="text-gray-400 text-xs sm:text-sm">2 months ago</p>
+                  </div>
+
+                  <p
+                    class="
+                      text-xs
+                      sm:text-sm
+                      text-gray-500
+                      leading-relaxed
+                      mt-2
+                    "
+                  >
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Unde numquam eaque voluptatibus sapiente quidem soluta
+                    laborum voluptatem tenetur consequatur? Culpa, aspernatur
+                    doloribus. Nulla, perspiciatis! Ut deleniti, iusto amet
+                    impedit adipisci consectetur consequatur cum fugiat dolores
+                    totam quas dolore perferendis debitis!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review Box -->
+        </div>
+      </main>
+    </div>
+
+    <script>
+      //Content list dropdown toggle
+      var btn = document.querySelectorAll(".dropdown-btn");
+      var content = document.querySelectorAll(".dropdown-content");
+
+      for (let i = 0; i < btn.length; i++) {
+        btn[i].addEventListener("click", function () {
+          // content.classList.toggle("hidden");
+          // content.classList.toggle("visible");
+          content[i].classList.toggle("h-32");
+          content[i].classList.toggle("h-0");
+
+          this.classList.toggle("-rotate-90");
+        });
+      }
+    </script>
+
+    <script>
+      //notes question tab bar
+      var tab = document.querySelectorAll(".tab-links");
+
+      for (var i = 0; i < tab.length; i++) {
+        document.getElementById("btn-" + (i + 1).toString()).onclick =
+          function () {
+            showTab(this);
+          };
+      }
+
+      function showTab(e) {
+        let selectedType = e.getAttribute("id");
+        var num = selectedType.slice(4);
+
+        document.getElementById("tabs" + num).classList.remove("hidden");
+        document.getElementById("tabs" + num).classList.add("visible");
+        document
+          .getElementById(selectedType)
+          .classList.add("border-b-2", "border-white");
+        document.getElementById(selectedType).classList.remove("btn");
+
+        for (var i = 1; i <= tab.length; i++) {
+          if (i == num) {
+          } else {
+            document.getElementById("tabs" + i).classList.add("hidden");
+            document.getElementById("tabs" + i).classList.remove("visible");
+            document
+              .getElementById("btn-" + i)
+              .classList.remove("border-b-2", "border-white");
+            document.getElementById("btn-" + i).classList.add("btn");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

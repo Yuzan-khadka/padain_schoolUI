@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Courses</title>
+    <!-- Tailwindcss -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Flickity -->
+    <link rel="stylesheet" href="css/flickity.css" />
+    <style>
+      .flickity-button {
+        background: #333;
+      }
+      .flickity-button:hover {
+        background: #333;
+      }
+
+      /* icon color */
+      .flickity-button-icon {
+        fill: white;
+      }
+      /* .flickity-slider{
+       margin-left: 20px;
+        background-color: red;
+        overflow-x: visible;
+        width: 100%;
+      
+
+      } */
+
+      @media only screen and (max-width: 600px) {
+        .flickity-button {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-gray-100 w-full">
+      <header>
+        <div
+          class="
+            h-52
+            sm:h-72
+            md:h-96
+            lg:h-108
+            w-full
+            relative
+            bg-gradient-radial
+            from-header-light
+            to-header-dark
+          "
+        >
+          <div class="w-full h-full flex justify-between">
+            <div
+              class="
+                w-full
+                md:w-1/2
+                pl-12
+                sm:pl-16
+                md:pl-24
+                lg:pl-28
+                pt-14
+                pr-5
+                md:pr-0
+                sm:pt-20
+                md:pt-32
+              "
+            >
+              <div
+                class="
+                  relative
+                  inline-block
+                  text-3xl
+                  sm:text-4xl
+                  md:text-5xl
+                  text-white
+                  font-laila font-bold
+                "
+              >
+                <span class="text-yellow-title">School</span>Courses
+
+                <img
+                  class="
+                    h-12
+                    w-12
+                    sm:h-20
+                    sm:w-20
+                    md:h-24
+                    md:w-24
+                    lg:h-28
+                    lg:w-28
+                    absolute
+                    -top-8
+                    sm:-top-14
+                    md:-top-16
+                    lg:-top-20
+                    right-0
+                  "
+                  src="../images/book.svg"
+                  alt=""
+                />
+              </div>
+
+              <p
+                class="
+                  text-white text-xs
+                  sm:text-sm
+                  md:text-base
+                  leading-relaxed
+                "
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                hic voluptatum iusto modi quasi perferendis fugiat temporibus ut
+                sed beatae.
+              </p>
+            </div>
+
+            <div
+              class="w-1/2 relative hidden md:flex justify-center pr-16 pb-8"
+            >
+              <img
+                class="w-72 lg:w-90 self-end"
+                src="../images/open-book.svg"
+                alt=""
+              />
+              <img
+                class="
+                  h-36
+                  lg:h-44
+                  absolute
+                  top-40
+                  left-0
+                  right-0
+                  mx-auto
+                  pr-44
+                "
+                src="../images/dotted-line-left.svg"
+                alt=""
+              />
+              <img
+                class="
+                  h-36
+                  lg:h-44
+                  absolute
+                  top-40
+                  left-0
+                  right-0
+                  mx-auto
+                  pr-20
+                "
+                src="../images/dotted-line-center.svg"
+                alt=""
+              />
+              <img
+                class="
+                  h-36
+                  lg:h-44
+                  absolute
+                  top-40
+                  left-0
+                  right-0
+                  mx-auto
+                  pl-14
+                "
+                src="../images/dotted-line-right.svg"
+                alt=""
+              />
+
+              <img
+                class="
+                  h-16
+                  lg:h-20
+                  absolute
+                  top-20
+                  lg:top-16
+                  left-0
+                  right-0
+                  mx-auto
+                  pr-16
+                "
+                src="../images/uranus.svg"
+                alt=""
+              />
+
+              <img
+                class="
+                  h-10
+                  lg:h-14
+                  absolute
+                  top-32
+                  left-0
+                  right-0
+                  mx-auto
+                  pr-48
+                  lg:pr-52
+                "
+                src="../images/pen.svg"
+                alt=""
+              />
+
+              <img
+                class="
+                  h-12
+                  lg:h-16
+                  absolute
+                  top-8
+                  left-0
+                  right-0
+                  mx-auto
+                  pr-96
+                  lg:pr-108
+                  transform
+                  -rotate-45
+                "
+                src="../images/alphabet-A.svg"
+                alt=""
+              />
+
+              <img
+                class="
+                  h-5
+                  lg:h-8
+                  absolute
+                  top-60
+                  lg:top-66
+                  left-0
+                  right-0
+                  mx-auto
+                  pr-66
+                "
+                src="../images/protactor.svg"
+                alt=""
+              />
+
+              <img
+                class="
+                  h-4
+                  lg:h-6
+                  absolute
+                  top-66
+                  lg:top-72
+                  left-0
+                  right-0
+                  mx-auto
+                  pr-10
+                  transform
+                  -rotate-30
+                "
+                src="../images/alphabet-B.svg"
+                alt=""
+              />
+
+              <img
+                class="
+                  h-5
+                  lg:h-8
+                  absolute
+                  top-66
+                  lg:top-72
+                  left-0
+                  right-0
+                  mx-auto
+                  pr-32
+                "
+                src="../images/eraser.svg"
+                alt=""
+              />
+
+              <img
+                class="h-8 lg:h-12 absolute top-52 left-0 right-0 mx-auto pr-40"
+                src="../images/ruler.svg"
+                alt=""
+              />
+
+              <img
+                class="
+                  h-10
+                  lg:h-14
+                  absolute
+                  top-52
+                  lg:top-56
+                  left-0
+                  right-0
+                  mx-auto
+                  pr-4
+                  lg:pr-10
+                "
+                src="../images/atom.svg"
+                alt=""
+              />
+              <img
+                class="h-10 lg:h-14 absolute top-40 left-0 right-0 mx-auto"
+                src="../images/note-book.svg"
+                alt=""
+              />
+              <img
+                class="
+                  h-12
+                  lg:h-16
+                  absolute
+                  top-56
+                  lg:top-60
+                  left-0
+                  right-0
+                  mx-auto
+                  pl-32
+                "
+                src="../images/pencil.svg"
+                alt=""
+              />
+              <img
+                class="
+                  h-6
+                  lg:h-10
+                  absolute
+                  top-32
+                  left-0
+                  right-0
+                  mx-auto
+                  pl-52
+                  transform
+                  rotate-30
+                "
+                src="../images/alphabet-C.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <img
+            class="h-full absolute top-0 left-0 object-contain"
+            src="../images/star.png"
+            alt=""
+          />
+          <img
+            class="h-full absolute top-0 right-0 object-contain"
+            src="../images/star.png"
+            alt=""
+          />
+
+          <img
+            class="w-full h-8 sm:h-12 md:h-16 lg:h-24 absolute left-0 bottom-0"
+            src="../images/wave.png"
+            alt=""
+          />
+
+          <!-- <img
+            class="h-44 absolute bottom-24 right-96"
+            src="../images/dotted-line-left.svg"
+            alt=""
+          />
+          <img
+            class="h-44 absolute bottom-24 right-90"
+            src="../images/dotted-line-center.svg"
+            alt=""
+          />
+          <img
+          
+            class="h-44 absolute bottom-24 right-66"
+            src="../images/dotted-line-right.svg"
+            alt=""
+          /> -->
+        </div>
+      </header>
+
+      <main class="">
+        <!-- Class10 Subjects -->
+        <section class="mt-5 md:mt-10">
+          <h3
+            class="
+              text-xl
+              sm:text-2xl
+              md:text-3xl
+              font-bold
+              text-gray-700
+              px-5
+              sm:px-8
+            "
+          >
+            Class 10
+          </h3>
+          <div class="main-carousel pl-1 sm:pl-3 py-2 w-full">
+            <a
+              href="course-description.html"
+              class="
+                carousel-cell
+                mt-36
+                sm:mt-40
+                mr-5
+                sm:mr-8
+                md:mr-12
+                lg:mr-16
+                ml-10
+                mb-5
+                relative
+                w-40
+                sm:w-44
+                md:w-48
+                bg-white
+                h-12
+                sm:h-16
+                md:h-20
+                rounded-xl
+                shadow-md
+                text-center text-base
+                sm:text-xl
+              "
+            >
+              <p class="mt-5 sm:mt-6 md:mt-10 text-gray-700 font-semibold">
+                Science
+              </p>
+
+              <div
+                class="
+                  absolute
+                  -top-32
+                  sm:-top-36
+                  left-0
+                  right-0
+                  mx-auto
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class10-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/flask.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <a
+              href="course-description.html"
+              class="
+                carousel-cell
+                mt-36
+                sm:mt-40
+                mr-5
+                sm:mr-8
+                md:mr-12
+                lg:mr-16
+                mb-5
+                relative
+                w-40
+                sm:w-44
+                md:w-48
+                bg-white
+                h-12
+                sm:h-16
+                md:h-20
+                rounded-xl
+                shadow-md
+                text-center text-base
+                sm:text-xl
+              "
+            >
+              <p class="mt-5 sm:mt-6 md:mt-10 text-gray-700 font-semibold">
+                Maths
+              </p>
+
+              <div
+                class="
+                  absolute
+                  -top-32
+                  sm:-top-36
+                  left-0
+                  right-0
+                  mx-auto
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class10-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/math.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <a
+              href="course-description.html"
+              class="
+                carousel-cell
+                mt-36
+                sm:mt-40
+                mr-5
+                sm:mr-8
+                md:mr-12
+                lg:mr-16
+                mb-5
+                relative
+                w-40
+                sm:w-44
+                md:w-48
+                bg-white
+                h-12
+                sm:h-16
+                md:h-20
+                rounded-xl
+                shadow-md
+                text-center text-base
+                sm:text-xl
+              "
+            >
+              <p class="mt-5 sm:mt-6 md:mt-10 text-gray-700 font-semibold">
+                English
+              </p>
+
+              <div
+                class="
+                  absolute
+                  -top-32
+                  sm:-top-36
+                  left-0
+                  right-0
+                  mx-auto
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class10-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/english.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <a
+              href="course-description.html"
+              class="
+                carousel-cell
+                mt-36
+                sm:mt-40
+                mr-5
+                sm:mr-8
+                md:mr-12
+                lg:mr-16
+                mb-5
+                relative
+                w-40
+                sm:w-44
+                md:w-48
+                bg-white
+                h-12
+                sm:h-16
+                md:h-20
+                rounded-xl
+                shadow-md
+                text-center text-base
+                sm:text-xl
+              "
+            >
+              <p class="mt-5 sm:mt-6 md:mt-10 text-gray-700 font-semibold">
+                Social Studies
+              </p>
+
+              <div
+                class="
+                  absolute
+                  -top-32
+                  sm:-top-36
+                  left-0
+                  right-0
+                  mx-auto
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class10-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/social-studies.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <a
+              href="course-description.html"
+              class="
+                carousel-cell
+                mt-36
+                sm:mt-40
+                mr-5
+                sm:mr-8
+                md:mr-12
+                lg:mr-16
+                mb-5
+                relative
+                w-40
+                sm:w-44
+                md:w-48
+                bg-white
+                h-12
+                sm:h-16
+                md:h-20
+                rounded-xl
+                shadow-md
+                text-center text-base
+                sm:text-xl
+              "
+            >
+              <p class="mt-5 sm:mt-6 md:mt-10 text-gray-700 font-semibold">
+                Nepali
+              </p>
+
+              <div
+                class="
+                  absolute
+                  -top-32
+                  sm:-top-36
+                  left-0
+                  right-0
+                  mx-auto
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class10-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/nepali.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Class9 Subjects -->
+        <section class="mt-5 md:mt-10">
+          <h3
+            class="
+              text-xl
+              sm:text-2xl
+              md:text-3xl
+              font-bold
+              text-gray-700
+              px-5
+              sm:px-8
+            "
+          >
+            Class 9
+          </h3>
+          <div class="main-carousel pl-1 sm:pl-3 py-2 w-full">
+            <a
+              href="course-description.html"
+              class="
+                carousel-cell
+                mt-36
+                sm:mt-40
+                mr-5
+                sm:mr-8
+                md:mr-12
+                lg:mr-16
+                ml-10
+                mb-5
+                relative
+                w-40
+                sm:w-44
+                md:w-48
+                bg-white
+                h-12
+                sm:h-16
+                md:h-20
+                rounded-xl
+                shadow-md
+                text-center text-base
+                sm:text-xl
+              "
+            >
+              <p class="mt-5 sm:mt-6 md:mt-10 text-gray-700 font-semibold">
+                Science
+              </p>
+
+              <div
+                class="
+                  absolute
+                  -top-32
+                  sm:-top-36
+                  left-0
+                  right-0
+                  mx-auto
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class9-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/flask.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <a
+              href="course-description.html"
+              class="
+                carousel-cell
+                mt-36
+                sm:mt-40
+                mr-5
+                sm:mr-8
+                md:mr-12
+                lg:mr-16
+                mb-5
+                relative
+                w-40
+                sm:w-44
+                md:w-48
+                bg-white
+                h-12
+                sm:h-16
+                md:h-20
+                rounded-xl
+                shadow-md
+                text-center text-base
+                sm:text-xl
+              "
+            >
+              <p class="mt-5 sm:mt-6 md:mt-10 text-gray-700 font-semibold">
+                Maths
+              </p>
+
+              <div
+                class="
+                  absolute
+                  -top-32
+                  sm:-top-36
+                  left-0
+                  right-0
+                  mx-auto
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class9-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/math.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <a
+              href="course-description.html"
+              class="
+                carousel-cell
+                mt-36
+                sm:mt-40
+                mr-5
+                sm:mr-8
+                md:mr-12
+                lg:mr-16
+                mb-5
+                relative
+                w-40
+                sm:w-44
+                md:w-48
+                bg-white
+                h-12
+                sm:h-16
+                md:h-20
+                rounded-xl
+                shadow-md
+                text-center text-base
+                sm:text-xl
+              "
+            >
+              <p class="mt-5 sm:mt-6 md:mt-10 text-gray-700 font-semibold">
+                English
+              </p>
+
+              <div
+                class="
+                  absolute
+                  -top-32
+                  sm:-top-36
+                  left-0
+                  right-0
+                  mx-auto
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class9-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/english.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <a
+              href="course-description.html"
+              class="
+                carousel-cell
+                mt-36
+                sm:mt-40
+                mr-5
+                sm:mr-8
+                md:mr-12
+                lg:mr-16
+                mb-5
+                relative
+                w-40
+                sm:w-44
+                md:w-48
+                bg-white
+                h-12
+                sm:h-16
+                md:h-20
+                rounded-xl
+                shadow-md
+                text-center text-base
+                sm:text-xl
+              "
+            >
+              <p class="mt-5 sm:mt-6 md:mt-10 text-gray-700 font-semibold">
+                Social Studies
+              </p>
+
+              <div
+                class="
+                  absolute
+                  -top-32
+                  sm:-top-36
+                  left-0
+                  right-0
+                  mx-auto
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class9-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/social-studies.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <a
+              href="course-description.html"
+              class="
+                carousel-cell
+                mt-36
+                sm:mt-40
+                mr-5
+                sm:mr-8
+                md:mr-12
+                lg:mr-16
+                mb-5
+                relative
+                w-40
+                sm:w-44
+                md:w-48
+                bg-white
+                h-12
+                sm:h-16
+                md:h-20
+                rounded-xl
+                shadow-md
+                text-center text-base
+                sm:text-xl
+              "
+            >
+              <p class="mt-5 sm:mt-6 md:mt-10 text-gray-700 font-semibold">
+                Nepali
+              </p>
+
+              <div
+                class="
+                  absolute
+                  -top-32
+                  sm:-top-36
+                  left-0
+                  right-0
+                  mx-auto
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class9-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/nepali.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Class8 Subjects -->
+        <section class="mt-5 md:mt-10">
+          <h3
+            class="
+              text-xl
+              sm:text-2xl
+              md:text-3xl
+              font-bold
+              text-gray-700
+              px-5
+              sm:px-8
+            "
+          >
+            Class 8
+          </h3>
+          <div class="main-carousel pl-1 sm:pl-3 py-2 w-full">
+            <div
+              class="
+                carousel-cell
+                mt-36
+                sm:mt-40
+                mr-5
+                sm:mr-8
+                md:mr-12
+                lg:mr-16
+                ml-10
+                mb-5
+                relative
+                w-40
+                sm:w-44
+                md:w-48
+                bg-white
+                h-12
+                sm:h-16
+                md:h-20
+                rounded-xl
+                shadow-md
+                text-center text-base
+                sm:text-xl
+              "
+            >
+              <p class="mt-5 sm:mt-6 md:mt-10 text-gray-700 font-semibold">
+                Science
+              </p>
+
+              <div
+                class="
+                  absolute
+                  -top-32
+                  sm:-top-36
+                  left-0
+                  right-0
+                  mx-auto
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class8-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/flask.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <a
+              href="course-description.html"
+              class="
+                carousel-cell
+                mt-36
+                sm:mt-40
+                mr-5
+                sm:mr-8
+                md:mr-12
+                lg:mr-16
+                mb-5
+                relative
+                w-40
+                sm:w-44
+                md:w-48
+                bg-white
+                h-12
+                sm:h-16
+                md:h-20
+                rounded-xl
+                shadow-md
+                text-center text-base
+                sm:text-xl
+              "
+            >
+              <p class="mt-5 sm:mt-6 md:mt-10 text-gray-700 font-semibold">
+                Maths
+              </p>
+
+              <div
+                class="
+                  absolute
+                  -top-32
+                  sm:-top-36
+                  left-0
+                  right-0
+                  mx-auto
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class8-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/math.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <a
+              href="course-description.html"
+              class="
+                carousel-cell
+                mt-36
+                sm:mt-40
+                mr-5
+                sm:mr-8
+                md:mr-12
+                lg:mr-16
+                mb-5
+                relative
+                w-40
+                sm:w-44
+                md:w-48
+                bg-white
+                h-12
+                sm:h-16
+                md:h-20
+                rounded-xl
+                shadow-md
+                text-center text-base
+                sm:text-xl
+              "
+            >
+              <p class="mt-5 sm:mt-6 md:mt-10 text-gray-700 font-semibold">
+                English
+              </p>
+
+              <div
+                class="
+                  absolute
+                  -top-32
+                  sm:-top-36
+                  left-0
+                  right-0
+                  mx-auto
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class8-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/english.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <a
+              href="course-description.html"
+              class="
+                carousel-cell
+                mt-36
+                sm:mt-40
+                mr-5
+                sm:mr-8
+                md:mr-12
+                lg:mr-16
+                mb-5
+                relative
+                w-40
+                sm:w-44
+                md:w-48
+                bg-white
+                h-12
+                sm:h-16
+                md:h-20
+                rounded-xl
+                shadow-md
+                text-center text-base
+                sm:text-xl
+              "
+            >
+              <p class="mt-5 sm:mt-6 md:mt-10 text-gray-700 font-semibold">
+                Social Studies
+              </p>
+
+              <div
+                class="
+                  absolute
+                  -top-32
+                  sm:-top-36
+                  left-0
+                  right-0
+                  mx-auto
+                  h-36
+                  sm:h-40
+                  md:h-44
+                  w-28
+                  sm:w-32
+                  md:w-36
+                  bg-white
+                  rounded-xl
+                  shadow-md
+                  flex
+                  hover:shadow-lg
+                  transform
+                  hover:scale-105
+                  transition
+                  ease-in-out
+                  duration-300
+                "
+              >
+                <img
+                  class="absolute h-6 sm:h-8 pl-4"
+                  src="../images/class8-badge.svg"
+                  alt=""
+                />
+                <img
+                  class="h-20 sm:h-24 m-auto"
+                  src="../images/social-studies.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Teacher and Board Section -->
+        <section class="mt-16 md:28 lg:mt-32 px-2 md:px-5 py-7 md:py-10">
+          <div
+            class="
+              w-full
+              h-40
+              md:h-44
+              lg:h-52
+              relative
+              bg-gradient-radial
+              from-purple-500
+              to-purple-900
+              flex flex-col
+              sm:flex-row
+              justify-around
+              items-center
+            "
+          >
+            <img
+              class="
+                absolute
+                left-0
+                right-0
+                mx-auto
+                sm:m-0
+                sm:left-10
+                md:left-16
+                -top-12
+                md:-top-16
+                lg:-top-20
+                w-48
+                sm:w-72
+                md:w-80
+                lg:w-108
+              "
+              src="../images/school-time.svg"
+              alt=""
+            />
+            <div class="h-1/2 w-full sm:h-1/2 sm:w-1/2"></div>
+
+            <div class="w-full sm:w-1/2 pl-5 pb-2 md:pl-6 pr-2 md:pr-4">
+              <h2
+                class="
+                  text-xl
+                  sm:text-3xl
+                  lg:text-4xl
+                  font-bold font-laila
+                  text-white
+                "
+              >
+                Lorem Ipsum
+              </h2>
+              <p
+                class="
+                  text-xs
+                  sm:text-sm
+                  md:text-base
+                  text-white
+                  leading-relaxed
+                "
+              >
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+                nam et ducimus. Qui, amet. Adipisci laborum !
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/flickity.js"></script>
+    <script>
+      $(".main-carousel").flickity({
+        cellAlign: "left",
+        contain: true,
+        freeScroll: true,
+        pageDots: false,
+        groupCells: true,
+      });
+
+      //       $('.main-carousel').each(function() {
+      //    if ($(this).find('div.carousel-cell').length <= 4) {
+      //       $(this).find('button.flickity-prev-next-button.previous, button.flickity-prev-next-button.next, ol.flickity-page-dots').hide();
+      //    }
+      //  });
+    </script>
+  </body>
+</html>
